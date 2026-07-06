@@ -46,7 +46,7 @@ const allSpeaker = [...speaker, vipSpeaker];
 
 console.log(allSpeaker);
 
-//calculate the functions for all the fell sum
+//calculate the functions for all the fee sum
 
 const fee = allSpeaker.map((m) => m.fee);
 
