@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <body>
+    <link rel="stylesheet" href="styles.css" />
+    <h1 class="header">Student Form</h1>
+
+    <div class="top-bar">
+      <!-- button to add the student -->
+      <div class="add-student" id="add-button">
+        <span class="add-text">Add Student</span>
+      </div>
+
+      <!-- search students -->
+      <div class="search">
+        <input placeholder="Search Student" id="search" />
+      </div>
+    </div>
+
+    <!-- //add and edit  -->
+    <div id="studentModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times</span>
+
+        <h2 id="modalTitle">Add Student</h2>
+
+        <form id="student-form">
+          <fieldset>
+            <legend>Student Information</legend>
+
+            <label>Id:</label>
+            <p id="idDisplay"></p>
+            <br />
+
+            <label>Full Name:</label>
+            <input type="text" id="fullname" />
+            <br /><br />
+
+            <label>Email:</label>
+            <input type="email" id="email" />
+            <br /><br />
+
+            <label>Roll No:</label>
+            <input type="number" id="rollnumber" />
+            <br /><br />
+
+            <label>Class:</label>
+            <input type="number" id="class" />
+            <br /><br />
+
+            <label>City:</label>
+            <input type="text" id="city" />
+            <br /><br />
+
+            <label>University:</label>
+            <input type="text" id="university" />
+            <br /><br />
+
+            <label>Starting Date:</label>
+            <input type="date" id="startingDate" />
+            <br /><br />
+
+            <label>Ending Date:</label>
+            <input type="date" id="endingDate" />
+            <br /><br />
+
+            <button type="submit" id="saveBtn">Add Studnet</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div id="viewModal" class="modal">
+      <div class="modal-content">
+        <span id="closeViewModal" class="close">&times</span>
+
+        <h2>Student Details</h2>
+
+        <div id="studentDetails"></div>
+      </div>
+    </div>
+
+    <div class="table-container" id="table-container">
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>FullName</th>
+            <th>Email</th>
+            <th>Roll No</th>
+            <th>Class</th>
+            <th>City</th>
+            <th>University</th>
+            <th>Starting Date</th>
+            <th>Ending Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="studentTableBody"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
